@@ -1,0 +1,2 @@
+# assignments
+Repository til torsdagsøvelser
