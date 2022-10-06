@@ -1,0 +1,27 @@
+@startuml
+class Main
+class Car
+class Driver
+
+Main : - int age
+Main : - String name
+Main *-- "has_a" Car
+Main *-- "has_a" Driver
+Main : + main(String args)
+
+Car : - String make
+Car : - String model
+Car : - int year
+Car : - String bodyStyle
+Car : - Driver driver
+Car : + setDriver(Driver)
+Car : + getDriver():Driver
+Car : + toString():String
+Car *-- "has_a" Driver
+
+Driver : - String name
+Driver : - int age
+Driver : + toString():String
+
+
+@enduml
